@@ -263,4 +263,5 @@ class SiteController extends Controller
         echo Yii::$app->redis->get('test');   //读取redis缓存
         exit;
     }
+    
 }

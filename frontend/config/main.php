@@ -46,4 +46,5 @@ return [
         */
     ],
     'params' => $params,
+    'defaultRoute' => 'index/index'  //控制器/方法
 ];
