@@ -257,4 +257,10 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+    public function actionSay()
+    {
+        Yii::$app->redis->set('test','111');  //设置redis缓存
+        echo Yii::$app->redis->get('test');   //读取redis缓存
+        exit;
+    }
 }
